@@ -11,14 +11,14 @@
  */
 var p = function (n) {
   var i,
-      fib1 = 1,
-      fib2 = 2,
+      a = 1,
+      b = 2,
       sum = 2;
 
-  for (i = 3; i < n; i = fib1 + fib2) {
+  for (i = 3; i < n; i = a + b) {
     if (i % 2 === 0) sum += i;
-    fib1 = fib2;
-    fib2 = i;
+    a = b;
+    b = i;
   }
 
   return sum;
