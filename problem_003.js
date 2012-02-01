@@ -23,7 +23,7 @@ var p = function (n) {
 
   // Find the largest prime factor.
   for (i = 0; i < primes.length; i++) {
-    if (primes[i] * primes[i] > n) break;
+    if (primes[i] * primes[i] > n) break;
     while (n % primes[i] === 0) {
       factor = primes[i];
       n = n / primes[i];
