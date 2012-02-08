@@ -19,7 +19,7 @@ var p = function (n, m) {
   }
 
   range = range.filter(function (p) { return p; });
-  i = 1;
+  i = m * (m - 1);
 
   while (!smallest) {
     for (j = 0; j < range.length; j++) {
