@@ -29,6 +29,8 @@ var p = function (n) {
   var i, j, product,
       gp = 0;
 
+  // Try each permutation of five consecutive digits.
+  // Skip over all permutations including a digit = 0.
   for (i = 0; i < n.length - 4; i++) {
     for (j = 0; j < 5; j++) {
       if (n[i + j] == 0) {

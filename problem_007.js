@@ -12,6 +12,7 @@ var p = function (n) {
 
   primes[k++] = 2;
 
+  // Test all odd numbers 3 .. n, until the nth prime is found.
   for (p = 3; k < n; p += 2) {
     sqrt = Math.sqrt(p);
     for (i = 0; primes[i] <= sqrt; i++) if (p % primes[i] === 0) break;

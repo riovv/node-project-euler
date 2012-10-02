@@ -11,8 +11,10 @@ var p = function (n) {
       d = new Array(size),
       sum = 2;
 
+  // Create a list of odd numbers 3 .. n
   for (i = 0, p = 3; p < n; p += 2, i++) d[i] = p;
 
+  // Using Sieve of Eratosthenes, sum up all found primes.
   for (p = 0; p < size; p++) {
     if (d[p] === 0) continue;
     sum += d[p];
